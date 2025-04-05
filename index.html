@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuakeAlert</title>
+  <meta name="description" content="Real-time earthquake detection and alerts that save lives.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .alert {
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+    }
+    .alert-danger {
+      background-color: #f8d7da;
+      color: #721c24;
+      border-color: #f5c6cb;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-6">🌍 QuakeAlert</h1>
+    <p class="text-center text-xl mb-6">Real-time earthquake detection and alerts that save lives.</p>
+
+    <!-- Alerts Section -->
+    <div id="alert-container" class="mb-4"></div>
+
+    <!-- Filters Section -->
+    <div class="mb-4 flex flex-col sm:flex-row sm:justify-between sm:items-center">
+      <div>
+        <label for="filterKeyword" class="mr-2">Filter by Country/Keyword:</label>
+        <input id="filterKeyword" type="text" placeholder="e.g., Myanmar, USA" class="p-2 border rounded">
+      </div>
+      <div class="mt
